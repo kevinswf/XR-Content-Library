@@ -12,6 +12,8 @@ Teleportation Anchor - by the window rug
 
 ## Interaction
 
-Grab - racket & ball
+Racket & ball - Grab
 
-Socket - hat rack & head
+Hat rack & head - Socket interaction
+
+TV - pick up the remote & play
