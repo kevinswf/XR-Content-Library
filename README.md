@@ -13,3 +13,5 @@ Teleportation Anchor - by the window rug
 ## Interaction
 
 Grab - racket & ball
+
+Socket - hat rack & head
