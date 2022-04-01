@@ -17,3 +17,7 @@ Racket & ball - Grab
 Hat rack & head - Socket interaction
 
 TV - pick up the remote & play
+
+Hand Ray Switching
+
+UI - Welcome & Reset
