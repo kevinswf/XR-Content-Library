@@ -35,19 +35,19 @@ public class OnVelocity : MonoBehaviour
 
         inVelocity = HasVelocityBegun(speed);
 
-        if(HasVelocityEnded(speed))
+        if (HasVelocityEnded(speed))
             inVelocity = false;
     }
 
     private bool HasVelocityBegun(float speed)
     {
-        if(inVelocity)
+        if (inVelocity)
             return true;
 
         bool hasBegun = speed > beginVelocityThreshold;
 
         // trigger event for OnVelocityBegan
-        if(hasBegun)
+        if (hasBegun)
             OnBegin.Invoke();
 
         return hasBegun;
@@ -56,13 +56,13 @@ public class OnVelocity : MonoBehaviour
     private bool HasVelocityEnded(float speed)
     {
         // if velocity has not reached to threshold of hasBegun, then OnEnd cannot be triggered (even at low velocity)
-        if(!inVelocity)
+        if (!inVelocity)
             return false;
 
         bool hasEnded = speed < endVelocityThreshold;
 
         // trigger event for OnVelocityEnd
-        if(hasEnded)
+        if (hasEnded)
             OnEnd.Invoke();
 
         return hasEnded;
